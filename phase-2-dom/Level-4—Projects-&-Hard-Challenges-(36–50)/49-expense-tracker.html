@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    input {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    #total {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <input id="name" type="text" placeholder="Expense Name">
+
+  <input id="amount" type="number" placeholder="Amount">
+
+  <button id="addBtn">
+    Add Expense
+  </button>
+
+  <ul id="list"></ul>
+
+  <p id="total">
+    Total: 0
+  </p>
+
+  <script src="49-expense-tracker.js"></script>
+
+</body>
+
+</html>

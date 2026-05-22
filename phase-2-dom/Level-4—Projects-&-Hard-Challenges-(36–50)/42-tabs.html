@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+
+  <style>
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: gray;
+      color: white;
+    }
+
+    .content {
+      display: none;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="tabs">
+
+    <div class="tab active">
+      Tab 1
+    </div>
+
+    <div class="tab">
+      Tab 2
+    </div>
+
+    <div class="tab">
+      Tab 3
+    </div>
+
+  </div>
+
+  <div class="content active">
+    Content of Tab 1
+  </div>
+
+  <div class="content">
+    Content of Tab 2
+  </div>
+
+  <div class="content">
+    Content of Tab 3
+  </div>
+
+  <script src="42-tabs.js"></script>
+
+</body>
+
+</html>

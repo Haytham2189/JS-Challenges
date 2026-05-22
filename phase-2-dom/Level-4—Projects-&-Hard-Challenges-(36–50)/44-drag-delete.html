@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag to Delete</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: lightblue;
+      cursor: grab;
+    }
+
+    #trash {
+      width: 250px;
+      height: 120px;
+      background-color: crimson;
+      color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <ul>
+
+    <li draggable="true">Task 1</li>
+
+    <li draggable="true">Task 2</li>
+
+    <li draggable="true">Task 3</li>
+
+  </ul>
+
+  <div id="trash">
+    Trash
+  </div>
+
+  <script src="44-drag-delete.js"></script>
+
+</body>
+
+</html>

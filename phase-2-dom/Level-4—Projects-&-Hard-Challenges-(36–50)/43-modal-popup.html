@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Popup</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    #modal {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      display: none;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    #modalContent {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <button id="openBtn">
+    Open Modal
+  </button>
+
+  <div id="modal">
+
+    <div id="modalContent">
+
+      <h2>Modal Title</h2>
+
+      <p>Hello from the modal!</p>
+
+      <button id="closeBtn">
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="43-modal-popup.js"></script>
+
+</body>
+
+</html>

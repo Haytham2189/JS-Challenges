@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    #game {
+      display: grid;
+
+      grid-template-columns: repeat(4, 100px);
+
+      gap: 10px;
+
+      width: max-content;
+
+      margin: 50px auto;
+    }
+
+    .card {
+      width: 100px;
+      height: 100px;
+
+      background-color: steelblue;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 40px;
+
+      cursor: pointer;
+
+      color: transparent;
+    }
+
+    .card.flipped {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+    }
+
+    .card.matched {
+      background-color: lightgreen;
+      color: black;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="game"></div>
+
+  <script src="50-memory-card-game.js"></script>
+
+</body>
+
+</html>
